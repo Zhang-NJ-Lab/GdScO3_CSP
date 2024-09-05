@@ -1,0 +1,9 @@
+formulaType: fix                 
+structureType: bulk              
+symbols: ['Gd','Sc','O']                   
+formula: [1,1,3]                     
+min_n_atoms: 12                  
+max_n_atoms: 12         
+spacegroup: [1-230]              
+d_ratio: 0.5                     
+volume_ratio: 8                 
