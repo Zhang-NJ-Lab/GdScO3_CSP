@@ -1,0 +1,2054 @@
+ 
+            ,'  , `.     MAGUS                                           
+        ,-+-,.' _ |      (v.1.6.2 RELEASE)                                    
+      ,-+-. ;   , ||   =========================   ,--,  ============            
+     ,--.'|'   |  ;|             ,----._,.       ,'_ /|   .--.--.    
+    |   |  ,', |  ':  ,--.--.   /   /  ' /  .--. |  | :  /  /    '   
+    |   | /  | |  || /       \ |   :     |,'_ /| :  . | |  :  /`./   
+    '   | :  | :  |,.--.  .-. ||   | .\  .|  ' | |  . . |  :  ;_     
+    ;   . |  ; |--'  \__\/: . ..   ; ';  ||  | ' |  | |  \  \    `.  
+    |   : |  | ,     ," .--.; |'   .   . |:  | : ;  ; |   `----.   \ 
+    |   : '  |/     /  /  ,.  | `---`-'| |'  :  `--'   \ /  /`--'  / 
+    ;   | |`-'     ;  :   .'   \.'__/\_: |:  ,      .-./'--'.     /  
+    |   ;/         |  ,     .-./|   :    : `--`----'      `--'---'   
+    '---'           `--`---'     \   \  /                            
+
+For any work that used MAGUS, please cite the following references:
+
+1. Junjie Wang, Hao Gao, Yu Han, Chi Ding, Shuning Pan, Yong Wang, Qiuhan Jia,
+   Hui-Tian Wang, Dingyu Xing, and Jian Sun, “MAGUS: machine learning and graph
+   theory assisted universal structure searcher”, Natl. Sci. Rev. 10, nwad128, 
+   (2023).
+
+2. Kang Xia, Hao Gao, Cong Liu, Jianan Yuan, Jian Sun, Hui-Tian Wang, Dingyu
+   Xing, “A novel superhard tungsten nitride predicted by machine-learning 
+   accelerated crystal structure search”, Sci. Bull. 63, 817 (2018).
+-------------------------------------------------------------------------------
+
+Note: NumExpr detected 40 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+============== Initialize ==============
+Main Calculator information:
+AdjointCalculator:
+Calculator 1: VaspCalculator
+-------------------
+job_prefix     : VASP1
+pressure       : 0
+input_dir      : /root/ZJC/magus-test/113/inputFold/VASP1
+calc_dir       : /root/ZJC/magus-test/113/calcFold/VASP1
+mode           : serial
+vasp_setup     : pp_setup:
+                   Gd: ''
+                   O: _s
+                   Sc: _sv_GW
+                 pressure: 0
+                 restart: false
+                 xc: PBE
+-------------------
+Calculator 2: VaspCalculator
+-------------------
+job_prefix     : VASP2
+pressure       : 0
+input_dir      : /root/ZJC/magus-test/113/inputFold/VASP2
+calc_dir       : /root/ZJC/magus-test/113/calcFold/VASP2
+mode           : serial
+vasp_setup     : pp_setup:
+                   Gd: ''
+                   O: _s
+                   Sc: _sv_GW
+                 pressure: 0
+                 restart: false
+                 xc: PBE
+-------------------
+Calculator 3: VaspCalculator
+-------------------
+job_prefix     : VASP3
+pressure       : 0
+input_dir      : /root/ZJC/magus-test/113/inputFold/VASP3
+calc_dir       : /root/ZJC/magus-test/113/calcFold/VASP3
+mode           : serial
+vasp_setup     : pp_setup:
+                   Gd: ''
+                   O: _s
+                   Sc: _sv_GW
+                 pressure: 0
+                 restart: false
+                 xc: PBE
+-------------------
+Calculator 4: VaspCalculator
+-------------------
+job_prefix     : VASP4
+pressure       : 0
+input_dir      : /root/ZJC/magus-test/113/inputFold/VASP4
+calc_dir       : /root/ZJC/magus-test/113/calcFold/VASP4
+mode           : serial
+vasp_setup     : pp_setup:
+                   Gd: ''
+                   O: _s
+                   Sc: _sv_GW
+                 pressure: 0
+                 restart: false
+                 xc: PBE
+-------------------
+
+Random Generator information:
+SPGGenerator
+-------------------
+formula_type   : fix
+symbols        : ['Gd', 'Sc', 'O']
+min_n_atoms    : 5
+max_n_atoms    : 5
+-------------------
+
+Offspring Creator information:
+GAGenerator
+-------------------
+Mutations:
+ SlipMutation        : 16.67%
+ LatticeMutation     : 16.67%
+ RippleMutation      : 16.67%
+ RattleMutation      : 16.67%
+ PermMutation        : 16.67%
+Crossovers:
+ CutAndSplicePairing : 16.67%
+Random Ratio         : 30.00%
+Number of cluster    : 3
+Add symmertry        : True
+-------------------
+
+construct Population temp with 0 individual
+Population information:
+FixPopulation
+-------------------
+Ind Type           : Bulk
+Ind Numbers        : 0
+Population Size    : 20
+Distance Dict      : {('Gd', 'Gd'): 2.352, ('Gd', 'Sc'): 2.196, ('Sc', 'Gd'): 2.196, ('Gd', 'O'): 1.572, ('O', 'Gd'): 1.572, ('Sc', 'Sc'): 2.04, ('Sc', 'O'): 1.416, ('O', 'Sc'): 1.416, ('O', 'O'): 0.792}
+-------------------
+construct Population best with 0 individual
+construct Population good with 0 individual
+construct Population keep with 0 individual
+============= Generation 1 =============
+construct Population init with 20 individual
+Reading Seeds ...
+construct Population seed with 0 individual
+check population init, popsize:20
+check survival: 20
+Generate new initial population with 20 individuals:
+  random: 20
+save init1.traj
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'could not convert string to float: '****************'' happened on line 101
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+construct Population temp with 1 individual
+save raw1.traj
+check population temp, popsize:1
+check survival: 1
+find spg...
+delete duplicate structures...
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:1
+del_duplicate survival: 1
+save gen1.traj
+set good population..
+construct goodPop
+construct Population temp with 1 individual
+construct Population temp with 1 individual
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:1
+del_duplicate survival: 1
+calculating dominators...
+calculating fitness...
+calculating dominators...
+calculating fitness...
+good ind:
+GdO3Sc enthalpy: -9.11659971, fit: {'enthalpy': 9.11659971}, dominators: 0
+save good.traj
+save good1.traj
+set keep population..
+construct keepPop
+construct Population keep with 1 individual
+keep ind:
+GdO3Sc enthalpy: -9.11659971, fit: {'enthalpy': 9.11659971}, dominators: 0
+save keep1.traj
+best ind:
+calculating dominators...
+calculating fitness...
+GdO3Sc enthalpy: -9.11659971, fit: {'enthalpy': 9.11659971}
+save best.traj
+============= Generation 2 =============
+FixPopulation
+-------------------
+Ind Type           : Bulk
+Ind Numbers        : 1
+Population Size    : 20
+Distance Dict      : {('Gd', 'Gd'): 2.352, ('Gd', 'Sc'): 2.196, ('Sc', 'Gd'): 2.196, ('Gd', 'O'): 1.572, ('O', 'Gd'): 1.572, ('Sc', 'Sc'): 2.04, ('Sc', 'O'): 1.416, ('O', 'Sc'): 1.416, ('O', 'O'): 0.792}
+-------------------
+change volRatio from 3 to 1.6223609144539475
+construct Population temp with 1 individual
+calculating dominators...
+calculating fitness...
+GAGenerator
+-------------------
+Mutations:
+ SlipMutation        : 16.67%
+ LatticeMutation     : 16.67%
+ RippleMutation      : 16.67%
+ RattleMutation      : 16.67%
+ PermMutation        : 16.67%
+Crossovers:
+ CutAndSplicePairing : 16.67%
+Random Ratio         : 30.00%
+Number of cluster    : 3
+Add symmertry        : True
+-------------------
+
+construct Population init with 0 individual
+success LatticeMutation in init1-18
+success RattleMutation in init1-18
+success RippleMutation in init1-18
+success SlipMutation in init1-18
+success RattleMutation in init1-18
+success PermMutation in init1-18
+success SlipMutation in init1-18
+success SlipMutation in init1-18
+success LatticeMutation in init1-18
+success LatticeMutation in init1-18
+success RattleMutation in init1-18
+success SlipMutation in init1-18
+success RippleMutation in init1-18
+success CutAndSplicePairing between init1-18 and init1-18
+OP infomation: 
++---------------------+--------------+---------------+------------+
+|       Operator      | Probability  | SelectedTimes | SuccessNum |
++---------------------+--------------+---------------+------------+
+| CutAndSplicePairing |    16.67%    |       1       |     1      |
+|     SlipMutation    |    16.67%    |       4       |     4      |
+|   LatticeMutation   |    16.67%    |       3       |     3      |
+|    RippleMutation   |    16.67%    |       2       |     2      |
+|    RattleMutation   |    16.67%    |       3       |     3      |
+|     PermMutation    |    16.67%    |       1       |     1      |
++---------------------+--------------+---------------+------------+
+check population init, popsize:14
+check survival: 14
+Reading Seeds ...
+construct Population seed with 0 individual
+check population init, popsize:20
+check survival: 20
+Generate new initial population with 20 individuals:
+  CutAndSplicePairing: 1
+  SlipMutation: 4
+  LatticeMutation: 3
+  RippleMutation: 2
+  PermMutation: 1
+  random: 6
+  RattleMutation: 3
+save init2.traj
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+Error 'could not convert string to float: '********'' happened on line 106
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+construct Population temp with 11 individual
+save raw2.traj
+check population temp, popsize:11
+check survival: 11
+find spg...
+delete duplicate structures...
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:11
+del_duplicate survival: 2
+save gen2.traj
+set good population..
+construct goodPop
+construct Population temp with 2 individual
+construct Population temp with 3 individual
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:4
+del_duplicate survival: 2
+calculating dominators...
+calculating fitness...
+calculating dominators...
+calculating fitness...
+good ind:
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 0
+GdO3Sc enthalpy: -9.309687008000001, fit: {'enthalpy': 9.309687008000001}, dominators: 1
+save good.traj
+save good2.traj
+set keep population..
+construct keepPop
+construct Population keep with 2 individual
+keep ind:
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 0
+GdO3Sc enthalpy: -9.309687008000001, fit: {'enthalpy': 9.309687008000001}, dominators: 1
+save keep2.traj
+best ind:
+calculating dominators...
+calculating fitness...
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}
+save best.traj
+============= Generation 3 =============
+FixPopulation
+-------------------
+Ind Type           : Bulk
+Ind Numbers        : 2
+Population Size    : 20
+Distance Dict      : {('Gd', 'Gd'): 2.352, ('Gd', 'Sc'): 2.196, ('Sc', 'Gd'): 2.196, ('Gd', 'O'): 1.572, ('O', 'Gd'): 1.572, ('Sc', 'Sc'): 2.04, ('Sc', 'O'): 1.416, ('O', 'Sc'): 1.416, ('O', 'O'): 0.792}
+-------------------
+change volRatio from 1.6223609144539475 to 1.2040712903323907
+construct Population temp with 2 individual
+calculating dominators...
+calculating fitness...
+GAGenerator
+-------------------
+Mutations:
+ SlipMutation        : 16.67%
+ LatticeMutation     : 16.67%
+ RippleMutation      : 16.67%
+ RattleMutation      : 16.67%
+ PermMutation        : 16.67%
+Crossovers:
+ CutAndSplicePairing : 16.67%
+Random Ratio         : 30.00%
+Number of cluster    : 3
+Add symmertry        : True
+-------------------
+
+construct Population init with 0 individual
+success RattleMutation in init2-9
+success LatticeMutation in init2-10
+success RippleMutation in init2-10
+success SlipMutation in init2-9
+success PermMutation in init2-10
+success LatticeMutation in init2-9
+success PermMutation in init2-9
+success LatticeMutation in init2-10
+success RattleMutation in init2-10
+success PermMutation in init2-10
+success SlipMutation in init2-10
+success LatticeMutation in init2-10
+success RattleMutation in init2-9
+success CutAndSplicePairing between init2-9 and init2-9
+OP infomation: 
++---------------------+--------------+---------------+------------+
+|       Operator      | Probability  | SelectedTimes | SuccessNum |
++---------------------+--------------+---------------+------------+
+| CutAndSplicePairing |    16.67%    |       1       |     1      |
+|     SlipMutation    |    16.67%    |       2       |     2      |
+|   LatticeMutation   |    16.67%    |       4       |     4      |
+|    RippleMutation   |    16.67%    |       1       |     1      |
+|    RattleMutation   |    16.67%    |       3       |     3      |
+|     PermMutation    |    16.67%    |       3       |     3      |
++---------------------+--------------+---------------+------------+
+check population init, popsize:14
+check survival: 14
+Reading Seeds ...
+construct Population seed with 0 individual
+check population init, popsize:20
+check survival: 20
+Generate new initial population with 20 individuals:
+  CutAndSplicePairing: 1
+  SlipMutation: 2
+  LatticeMutation: 4
+  RippleMutation: 1
+  PermMutation: 3
+  random: 6
+  RattleMutation: 3
+save init3.traj
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+construct Population temp with 10 individual
+save raw3.traj
+check population temp, popsize:10
+check survival: 10
+find spg...
+delete duplicate structures...
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:10
+del_duplicate survival: 6
+save gen3.traj
+set good population..
+construct goodPop
+construct Population temp with 6 individual
+construct Population temp with 8 individual
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:10
+del_duplicate survival: 6
+calculating dominators...
+calculating fitness...
+calculating dominators...
+calculating fitness...
+good ind:
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 0
+GdO3Sc enthalpy: -9.486263726, fit: {'enthalpy': 9.486263726}, dominators: 1
+GdO3Sc enthalpy: -9.414115614, fit: {'enthalpy': 9.414115614}, dominators: 2
+GdO3Sc enthalpy: -9.404843688, fit: {'enthalpy': 9.404843688}, dominators: 3
+GdO3Sc enthalpy: -9.309687008000001, fit: {'enthalpy': 9.309687008000001}, dominators: 4
+GdO3Sc enthalpy: -8.69534056, fit: {'enthalpy': 8.69534056}, dominators: 5
+save good.traj
+save good3.traj
+set keep population..
+construct keepPop
+construct Population keep with 3 individual
+keep ind:
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 0
+GdO3Sc enthalpy: -9.414115614, fit: {'enthalpy': 9.414115614}, dominators: 2
+GdO3Sc enthalpy: -9.309687008000001, fit: {'enthalpy': 9.309687008000001}, dominators: 4
+save keep3.traj
+best ind:
+calculating dominators...
+calculating fitness...
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}
+save best.traj
+============= Generation 4 =============
+FixPopulation
+-------------------
+Ind Type           : Bulk
+Ind Numbers        : 6
+Population Size    : 20
+Distance Dict      : {('Gd', 'Gd'): 2.352, ('Gd', 'Sc'): 2.196, ('Sc', 'Gd'): 2.196, ('Gd', 'O'): 1.572, ('O', 'Gd'): 1.572, ('Sc', 'Sc'): 2.04, ('Sc', 'O'): 1.416, ('O', 'Sc'): 1.416, ('O', 'O'): 0.792}
+-------------------
+change volRatio from 1.2040712903323907 to 1.0765095925060526
+construct Population temp with 6 individual
+calculating dominators...
+calculating fitness...
+GAGenerator
+-------------------
+Mutations:
+ SlipMutation        : 16.67%
+ LatticeMutation     : 16.67%
+ RippleMutation      : 16.67%
+ RattleMutation      : 16.67%
+ PermMutation        : 16.67%
+Crossovers:
+ CutAndSplicePairing : 16.67%
+Random Ratio         : 30.00%
+Number of cluster    : 3
+Add symmertry        : True
+-------------------
+
+construct Population init with 0 individual
+success CutAndSplicePairing between init3-12 and init2-9
+success SlipMutation in init3-13
+success PermMutation in init3-13
+success LatticeMutation in init2-10
+success LatticeMutation in init2-10
+success LatticeMutation in init3-1
+success RattleMutation in init3-3
+success CutAndSplicePairing between init3-12 and init2-9
+success RippleMutation in init3-3
+success SlipMutation in init3-15
+success RippleMutation in init3-4
+success LatticeMutation in init2-9
+success RattleMutation in init2-10
+success LatticeMutation in init3-4
+OP infomation: 
++---------------------+--------------+---------------+------------+
+|       Operator      | Probability  | SelectedTimes | SuccessNum |
++---------------------+--------------+---------------+------------+
+| CutAndSplicePairing |    16.67%    |       2       |     2      |
+|     SlipMutation    |    16.67%    |       2       |     2      |
+|   LatticeMutation   |    16.67%    |       5       |     5      |
+|    RippleMutation   |    16.67%    |       2       |     2      |
+|    RattleMutation   |    16.67%    |       2       |     2      |
+|     PermMutation    |    16.67%    |       1       |     1      |
++---------------------+--------------+---------------+------------+
+check population init, popsize:14
+check survival: 14
+Reading Seeds ...
+construct Population seed with 0 individual
+check population init, popsize:20
+check survival: 20
+Generate new initial population with 20 individuals:
+  CutAndSplicePairing: 2
+  SlipMutation: 2
+  LatticeMutation: 5
+  RippleMutation: 2
+  PermMutation: 1
+  random: 6
+  RattleMutation: 2
+save init4.traj
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+construct Population temp with 10 individual
+save raw4.traj
+check population temp, popsize:10
+check survival: 10
+find spg...
+delete duplicate structures...
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:10
+del_duplicate survival: 6
+save gen4.traj
+set good population..
+construct goodPop
+construct Population temp with 6 individual
+construct Population temp with 12 individual
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:15
+del_duplicate survival: 10
+calculating dominators...
+calculating fitness...
+calculating dominators...
+calculating fitness...
+good ind:
+GdO3Sc enthalpy: -9.578852304, fit: {'enthalpy': 9.578852304}, dominators: 0
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 1
+GdO3Sc enthalpy: -9.518363048000001, fit: {'enthalpy': 9.518363048000001}, dominators: 2
+GdO3Sc enthalpy: -9.486263726, fit: {'enthalpy': 9.486263726}, dominators: 3
+GdO3Sc enthalpy: -9.424721956, fit: {'enthalpy': 9.424721956}, dominators: 4
+GdO3Sc enthalpy: -9.414115614, fit: {'enthalpy': 9.414115614}, dominators: 5
+GdO3Sc enthalpy: -9.404843688, fit: {'enthalpy': 9.404843688}, dominators: 6
+GdO3Sc enthalpy: -9.309687008000001, fit: {'enthalpy': 9.309687008000001}, dominators: 7
+GdO3Sc enthalpy: -8.842125849999999, fit: {'enthalpy': 8.842125849999999}, dominators: 8
+GdO3Sc enthalpy: -8.69534056, fit: {'enthalpy': 8.69534056}, dominators: 9
+save good.traj
+save good4.traj
+set keep population..
+construct keepPop
+construct Population keep with 3 individual
+keep ind:
+GdO3Sc enthalpy: -9.578852304, fit: {'enthalpy': 9.578852304}, dominators: 0
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 1
+GdO3Sc enthalpy: -8.842125849999999, fit: {'enthalpy': 8.842125849999999}, dominators: 8
+save keep4.traj
+best ind:
+calculating dominators...
+calculating fitness...
+GdO3Sc enthalpy: -9.578852304, fit: {'enthalpy': 9.578852304}
+save best.traj
+============= Generation 5 =============
+FixPopulation
+-------------------
+Ind Type           : Bulk
+Ind Numbers        : 6
+Population Size    : 20
+Distance Dict      : {('Gd', 'Gd'): 2.352, ('Gd', 'Sc'): 2.196, ('Sc', 'Gd'): 2.196, ('Gd', 'O'): 1.572, ('O', 'Gd'): 1.572, ('Sc', 'Sc'): 2.04, ('Sc', 'O'): 1.416, ('O', 'Sc'): 1.416, ('O', 'O'): 0.792}
+-------------------
+change volRatio from 1.0765095925060526 to 1.062557516799913
+construct Population temp with 6 individual
+calculating dominators...
+calculating fitness...
+GAGenerator
+-------------------
+Mutations:
+ SlipMutation        : 16.67%
+ LatticeMutation     : 16.67%
+ RippleMutation      : 16.67%
+ RattleMutation      : 16.67%
+ PermMutation        : 16.67%
+Crossovers:
+ CutAndSplicePairing : 16.67%
+Random Ratio         : 30.00%
+Number of cluster    : 3
+Add symmertry        : True
+-------------------
+
+construct Population init with 0 individual
+success CutAndSplicePairing between init4-14 and init4-14
+success CutAndSplicePairing between init4-14 and init4-14
+success RattleMutation in init4-5
+success RippleMutation in init4-1
+success LatticeMutation in init4-1
+success RippleMutation in init4-2
+success CutAndSplicePairing between init4-14 and init4-14
+success SlipMutation in init4-6
+success RattleMutation in init4-1
+success CutAndSplicePairing between init4-2 and init4-1
+success SlipMutation in init4-6
+success RippleMutation in init4-1
+success SlipMutation in init4-11
+success PermMutation in init4-1
+OP infomation: 
++---------------------+--------------+---------------+------------+
+|       Operator      | Probability  | SelectedTimes | SuccessNum |
++---------------------+--------------+---------------+------------+
+| CutAndSplicePairing |    16.67%    |       4       |     4      |
+|     SlipMutation    |    16.67%    |       3       |     3      |
+|   LatticeMutation   |    16.67%    |       1       |     1      |
+|    RippleMutation   |    16.67%    |       3       |     3      |
+|    RattleMutation   |    16.67%    |       2       |     2      |
+|     PermMutation    |    16.67%    |       1       |     1      |
++---------------------+--------------+---------------+------------+
+check population init, popsize:14
+check survival: 14
+Reading Seeds ...
+construct Population seed with 0 individual
+check population init, popsize:20
+check survival: 20
+Generate new initial population with 20 individuals:
+  CutAndSplicePairing: 4
+  SlipMutation: 3
+  RippleMutation: 3
+  LatticeMutation: 1
+  PermMutation: 1
+  random: 6
+  RattleMutation: 2
+save init5.traj
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'could not convert string to float: '****************'' happened on line 101
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+construct Population temp with 12 individual
+save raw5.traj
+check population temp, popsize:12
+check survival: 12
+find spg...
+delete duplicate structures...
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:12
+del_duplicate survival: 11
+save gen5.traj
+set good population..
+construct goodPop
+construct Population temp with 11 individual
+construct Population temp with 21 individual
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:24
+del_duplicate survival: 17
+calculating dominators...
+calculating fitness...
+calculating dominators...
+calculating fitness...
+good ind:
+GdO3Sc enthalpy: -9.578852304, fit: {'enthalpy': 9.578852304}, dominators: 0
+GdO3Sc enthalpy: -9.562748972, fit: {'enthalpy': 9.562748972}, dominators: 1
+GdO3Sc enthalpy: -9.544294214, fit: {'enthalpy': 9.544294214}, dominators: 2
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 3
+GdO3Sc enthalpy: -9.518363048000001, fit: {'enthalpy': 9.518363048000001}, dominators: 4
+GdO3Sc enthalpy: -9.490916834, fit: {'enthalpy': 9.490916834}, dominators: 5
+GdO3Sc enthalpy: -9.486263726, fit: {'enthalpy': 9.486263726}, dominators: 6
+GdO3Sc enthalpy: -9.460983916, fit: {'enthalpy': 9.460983916}, dominators: 7
+GdO3Sc enthalpy: -9.424721956, fit: {'enthalpy': 9.424721956}, dominators: 8
+GdO3Sc enthalpy: -9.414296842, fit: {'enthalpy': 9.414296842}, dominators: 9
+GdO3Sc enthalpy: -9.414115614, fit: {'enthalpy': 9.414115614}, dominators: 10
+GdO3Sc enthalpy: -9.404843688, fit: {'enthalpy': 9.404843688}, dominators: 11
+GdO3Sc enthalpy: -9.385902974, fit: {'enthalpy': 9.385902974}, dominators: 12
+GdO3Sc enthalpy: -9.309687008000001, fit: {'enthalpy': 9.309687008000001}, dominators: 13
+GdO3Sc enthalpy: -9.152863686, fit: {'enthalpy': 9.152863686}, dominators: 14
+GdO3Sc enthalpy: -8.842125849999999, fit: {'enthalpy': 8.842125849999999}, dominators: 15
+GdO3Sc enthalpy: -8.69534056, fit: {'enthalpy': 8.69534056}, dominators: 16
+save good.traj
+save good5.traj
+set keep population..
+construct keepPop
+construct Population keep with 3 individual
+keep ind:
+GdO3Sc enthalpy: -8.842125849999999, fit: {'enthalpy': 8.842125849999999}, dominators: 15
+GdO3Sc enthalpy: -9.578852304, fit: {'enthalpy': 9.578852304}, dominators: 0
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 3
+save keep5.traj
+best ind:
+calculating dominators...
+calculating fitness...
+GdO3Sc enthalpy: -9.578852304, fit: {'enthalpy': 9.578852304}
+save best.traj
+============= Generation 6 =============
+FixPopulation
+-------------------
+Ind Type           : Bulk
+Ind Numbers        : 11
+Population Size    : 20
+Distance Dict      : {('Gd', 'Gd'): 2.352, ('Gd', 'Sc'): 2.196, ('Sc', 'Gd'): 2.196, ('Gd', 'O'): 1.572, ('O', 'Gd'): 1.572, ('Sc', 'Sc'): 2.04, ('Sc', 'O'): 1.416, ('O', 'Sc'): 1.416, ('O', 'O'): 0.792}
+-------------------
+change volRatio from 1.062557516799913 to 1.0200293753718597
+construct Population temp with 11 individual
+calculating dominators...
+calculating fitness...
+GAGenerator
+-------------------
+Mutations:
+ SlipMutation        : 16.67%
+ LatticeMutation     : 16.67%
+ RippleMutation      : 16.67%
+ RattleMutation      : 16.67%
+ PermMutation        : 16.67%
+Crossovers:
+ CutAndSplicePairing : 16.67%
+Random Ratio         : 30.00%
+Number of cluster    : 3
+Add symmertry        : True
+-------------------
+
+construct Population init with 0 individual
+success RippleMutation in init5-13
+success LatticeMutation in init4-1
+success LatticeMutation in init4-1
+success PermMutation in init5-11
+success CutAndSplicePairing between init2-10 and init5-19
+success SlipMutation in init5-13
+success CutAndSplicePairing between init5-12 and init2-10
+success PermMutation in init4-1
+success RippleMutation in init5-13
+success SlipMutation in init5-11
+success CutAndSplicePairing between init2-10 and init5-12
+success PermMutation in init5-9
+success CutAndSplicePairing between init5-12 and init2-10
+success CutAndSplicePairing between init4-1 and init5-13
+OP infomation: 
++---------------------+--------------+---------------+------------+
+|       Operator      | Probability  | SelectedTimes | SuccessNum |
++---------------------+--------------+---------------+------------+
+| CutAndSplicePairing |    16.67%    |       5       |     5      |
+|     SlipMutation    |    16.67%    |       2       |     2      |
+|   LatticeMutation   |    16.67%    |       2       |     2      |
+|    RippleMutation   |    16.67%    |       2       |     2      |
+|    RattleMutation   |    16.67%    |       0       |     0      |
+|     PermMutation    |    16.67%    |       3       |     3      |
++---------------------+--------------+---------------+------------+
+check population init, popsize:14
+check survival: 14
+Reading Seeds ...
+construct Population seed with 0 individual
+check population init, popsize:20
+check survival: 20
+Generate new initial population with 20 individuals:
+  CutAndSplicePairing: 5
+  SlipMutation: 2
+  RippleMutation: 2
+  LatticeMutation: 2
+  PermMutation: 3
+  random: 6
+save init6.traj
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+construct Population temp with 11 individual
+save raw6.traj
+check population temp, popsize:11
+check survival: 11
+find spg...
+delete duplicate structures...
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:11
+del_duplicate survival: 9
+save gen6.traj
+set good population..
+construct goodPop
+construct Population temp with 9 individual
+construct Population temp with 26 individual
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:29
+del_duplicate survival: 22
+calculating dominators...
+calculating fitness...
+calculating dominators...
+calculating fitness...
+good ind:
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}, dominators: 0
+GdO3Sc enthalpy: -9.578852304, fit: {'enthalpy': 9.578852304}, dominators: 1
+GdO3Sc enthalpy: -9.570952232, fit: {'enthalpy': 9.570952232}, dominators: 2
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 3
+GdO3Sc enthalpy: -9.518363048000001, fit: {'enthalpy': 9.518363048000001}, dominators: 4
+GdO3Sc enthalpy: -9.498274866, fit: {'enthalpy': 9.498274866}, dominators: 5
+GdO3Sc enthalpy: -9.490916834, fit: {'enthalpy': 9.490916834}, dominators: 6
+GdO3Sc enthalpy: -9.486263726, fit: {'enthalpy': 9.486263726}, dominators: 7
+GdO3Sc enthalpy: -9.47912859, fit: {'enthalpy': 9.47912859}, dominators: 8
+GdO3Sc enthalpy: -9.460983916, fit: {'enthalpy': 9.460983916}, dominators: 9
+GdO3Sc enthalpy: -9.447373473999999, fit: {'enthalpy': 9.447373473999999}, dominators: 10
+GdO3Sc enthalpy: -9.443758945999999, fit: {'enthalpy': 9.443758945999999}, dominators: 11
+GdO3Sc enthalpy: -9.424721956, fit: {'enthalpy': 9.424721956}, dominators: 12
+GdO3Sc enthalpy: -9.414296842, fit: {'enthalpy': 9.414296842}, dominators: 13
+GdO3Sc enthalpy: -9.414115614, fit: {'enthalpy': 9.414115614}, dominators: 14
+GdO3Sc enthalpy: -9.404843688, fit: {'enthalpy': 9.404843688}, dominators: 15
+GdO3Sc enthalpy: -9.385902974, fit: {'enthalpy': 9.385902974}, dominators: 16
+GdO3Sc enthalpy: -9.309687008000001, fit: {'enthalpy': 9.309687008000001}, dominators: 17
+GdO3Sc enthalpy: -9.152863686, fit: {'enthalpy': 9.152863686}, dominators: 18
+GdO3Sc enthalpy: -8.842125849999999, fit: {'enthalpy': 8.842125849999999}, dominators: 19
+save good.traj
+save good6.traj
+set keep population..
+construct keepPop
+construct Population keep with 3 individual
+keep ind:
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 3
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}, dominators: 0
+GdO3Sc enthalpy: -8.842125849999999, fit: {'enthalpy': 8.842125849999999}, dominators: 19
+save keep6.traj
+best ind:
+calculating dominators...
+calculating fitness...
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}
+save best.traj
+============= Generation 7 =============
+FixPopulation
+-------------------
+Ind Type           : Bulk
+Ind Numbers        : 9
+Population Size    : 20
+Distance Dict      : {('Gd', 'Gd'): 2.352, ('Gd', 'Sc'): 2.196, ('Sc', 'Gd'): 2.196, ('Gd', 'O'): 1.572, ('O', 'Gd'): 1.572, ('Sc', 'Sc'): 2.04, ('Sc', 'O'): 1.416, ('O', 'Sc'): 1.416, ('O', 'O'): 0.792}
+-------------------
+change volRatio from 1.0200293753718597 to 1.0535616762241324
+construct Population temp with 9 individual
+calculating dominators...
+calculating fitness...
+GAGenerator
+-------------------
+Mutations:
+ SlipMutation        : 16.67%
+ LatticeMutation     : 16.67%
+ RippleMutation      : 16.67%
+ RattleMutation      : 16.67%
+ PermMutation        : 16.67%
+Crossovers:
+ CutAndSplicePairing : 16.67%
+Random Ratio         : 30.00%
+Number of cluster    : 3
+Add symmertry        : True
+-------------------
+
+construct Population init with 0 individual
+success SlipMutation in init6-1
+success RippleMutation in init6-11
+success SlipMutation in init6-1
+success SlipMutation in init6-1
+success PermMutation in init6-1
+success RattleMutation in init6-1
+success SlipMutation in init6-1
+success CutAndSplicePairing between init6-18 and init6-16
+success RattleMutation in init6-7
+success LatticeMutation in init6-6
+success CutAndSplicePairing between init6-10 and init6-6
+success RippleMutation in init6-7
+success RippleMutation in init2-10
+success SlipMutation in init6-1
+OP infomation: 
++---------------------+--------------+---------------+------------+
+|       Operator      | Probability  | SelectedTimes | SuccessNum |
++---------------------+--------------+---------------+------------+
+| CutAndSplicePairing |    16.67%    |       2       |     2      |
+|     SlipMutation    |    16.67%    |       5       |     5      |
+|   LatticeMutation   |    16.67%    |       1       |     1      |
+|    RippleMutation   |    16.67%    |       3       |     3      |
+|    RattleMutation   |    16.67%    |       2       |     2      |
+|     PermMutation    |    16.67%    |       1       |     1      |
++---------------------+--------------+---------------+------------+
+check population init, popsize:14
+check survival: 14
+Reading Seeds ...
+construct Population seed with 0 individual
+check population init, popsize:20
+Fail in check_cell, origin = random
+check survival: 19
+Generate new initial population with 19 individuals:
+  CutAndSplicePairing: 2
+  SlipMutation: 5
+  RippleMutation: 3
+  LatticeMutation: 1
+  PermMutation: 1
+  random: 5
+  RattleMutation: 2
+save init7.traj
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+construct Population temp with 8 individual
+save raw7.traj
+check population temp, popsize:8
+check survival: 8
+find spg...
+delete duplicate structures...
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:8
+del_duplicate survival: 8
+save gen7.traj
+set good population..
+construct goodPop
+construct Population temp with 8 individual
+construct Population temp with 28 individual
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:31
+del_duplicate survival: 23
+calculating dominators...
+calculating fitness...
+calculating dominators...
+calculating fitness...
+good ind:
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}, dominators: 0
+GdO3Sc enthalpy: -9.58642859, fit: {'enthalpy': 9.58642859}, dominators: 1
+GdO3Sc enthalpy: -9.570952232, fit: {'enthalpy': 9.570952232}, dominators: 2
+GdO3Sc enthalpy: -9.549157750000001, fit: {'enthalpy': 9.549157750000001}, dominators: 3
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 4
+GdO3Sc enthalpy: -9.518363048000001, fit: {'enthalpy': 9.518363048000001}, dominators: 5
+GdO3Sc enthalpy: -9.498274866, fit: {'enthalpy': 9.498274866}, dominators: 6
+GdO3Sc enthalpy: -9.490916834, fit: {'enthalpy': 9.490916834}, dominators: 7
+GdO3Sc enthalpy: -9.486263726, fit: {'enthalpy': 9.486263726}, dominators: 8
+GdO3Sc enthalpy: -9.47912859, fit: {'enthalpy': 9.47912859}, dominators: 9
+GdO3Sc enthalpy: -9.460983916, fit: {'enthalpy': 9.460983916}, dominators: 10
+GdO3Sc enthalpy: -9.447373473999999, fit: {'enthalpy': 9.447373473999999}, dominators: 11
+GdO3Sc enthalpy: -9.443758945999999, fit: {'enthalpy': 9.443758945999999}, dominators: 12
+GdO3Sc enthalpy: -9.430417250000001, fit: {'enthalpy': 9.430417250000001}, dominators: 13
+GdO3Sc enthalpy: -9.414296842, fit: {'enthalpy': 9.414296842}, dominators: 14
+GdO3Sc enthalpy: -9.414115614, fit: {'enthalpy': 9.414115614}, dominators: 15
+GdO3Sc enthalpy: -9.404843688, fit: {'enthalpy': 9.404843688}, dominators: 16
+GdO3Sc enthalpy: -9.385902974, fit: {'enthalpy': 9.385902974}, dominators: 17
+GdO3Sc enthalpy: -9.321412698, fit: {'enthalpy': 9.321412698}, dominators: 18
+GdO3Sc enthalpy: -9.152863686, fit: {'enthalpy': 9.152863686}, dominators: 19
+save good.traj
+save good7.traj
+set keep population..
+construct keepPop
+construct Population keep with 3 individual
+keep ind:
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 4
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}, dominators: 0
+GdO3Sc enthalpy: -9.321412698, fit: {'enthalpy': 9.321412698}, dominators: 18
+save keep7.traj
+best ind:
+calculating dominators...
+calculating fitness...
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}
+save best.traj
+============= Generation 8 =============
+FixPopulation
+-------------------
+Ind Type           : Bulk
+Ind Numbers        : 8
+Population Size    : 20
+Distance Dict      : {('Gd', 'Gd'): 2.352, ('Gd', 'Sc'): 2.196, ('Sc', 'Gd'): 2.196, ('Gd', 'O'): 1.572, ('O', 'Gd'): 1.572, ('Sc', 'Sc'): 2.04, ('Sc', 'O'): 1.416, ('O', 'Sc'): 1.416, ('O', 'O'): 0.792}
+-------------------
+change volRatio from 1.0535616762241324 to 1.0346844943786282
+construct Population temp with 8 individual
+calculating dominators...
+calculating fitness...
+GAGenerator
+-------------------
+Mutations:
+ SlipMutation        : 16.67%
+ LatticeMutation     : 16.67%
+ RippleMutation      : 16.67%
+ RattleMutation      : 16.67%
+ PermMutation        : 16.67%
+Crossovers:
+ CutAndSplicePairing : 16.67%
+Random Ratio         : 30.00%
+Number of cluster    : 3
+Add symmertry        : True
+-------------------
+
+construct Population init with 0 individual
+success PermMutation in init6-1
+success SlipMutation in init2-10
+success SlipMutation in init6-1
+success LatticeMutation in init7-16
+success CutAndSplicePairing between init6-1 and init7-5
+success PermMutation in init7-10
+success SlipMutation in init6-1
+success SlipMutation in init7-8
+success RippleMutation in init7-7
+success LatticeMutation in init7-7
+success CutAndSplicePairing between init6-1 and init7-5
+success PermMutation in init6-1
+success RippleMutation in init7-6
+success RippleMutation in init7-5
+OP infomation: 
++---------------------+--------------+---------------+------------+
+|       Operator      | Probability  | SelectedTimes | SuccessNum |
++---------------------+--------------+---------------+------------+
+| CutAndSplicePairing |    16.67%    |       2       |     2      |
+|     SlipMutation    |    16.67%    |       4       |     4      |
+|   LatticeMutation   |    16.67%    |       2       |     2      |
+|    RippleMutation   |    16.67%    |       3       |     3      |
+|    RattleMutation   |    16.67%    |       0       |     0      |
+|     PermMutation    |    16.67%    |       3       |     3      |
++---------------------+--------------+---------------+------------+
+check population init, popsize:14
+check survival: 14
+Reading Seeds ...
+construct Population seed with 0 individual
+check population init, popsize:20
+check survival: 20
+Generate new initial population with 20 individuals:
+  CutAndSplicePairing: 2
+  SlipMutation: 4
+  LatticeMutation: 2
+  RippleMutation: 3
+  PermMutation: 3
+  random: 6
+save init8.traj
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+construct Population temp with 11 individual
+save raw8.traj
+check population temp, popsize:11
+check survival: 11
+find spg...
+delete duplicate structures...
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:11
+del_duplicate survival: 8
+save gen8.traj
+set good population..
+construct goodPop
+construct Population temp with 8 individual
+construct Population temp with 28 individual
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:31
+del_duplicate survival: 26
+calculating dominators...
+calculating fitness...
+calculating dominators...
+calculating fitness...
+good ind:
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}, dominators: 0
+GdO3Sc enthalpy: -9.58642859, fit: {'enthalpy': 9.58642859}, dominators: 1
+GdO3Sc enthalpy: -9.570952232, fit: {'enthalpy': 9.570952232}, dominators: 2
+GdO3Sc enthalpy: -9.549157750000001, fit: {'enthalpy': 9.549157750000001}, dominators: 3
+GdO3Sc enthalpy: -9.540460586, fit: {'enthalpy': 9.540460586}, dominators: 4
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 5
+GdO3Sc enthalpy: -9.518363048000001, fit: {'enthalpy': 9.518363048000001}, dominators: 6
+GdO3Sc enthalpy: -9.498274866, fit: {'enthalpy': 9.498274866}, dominators: 7
+GdO3Sc enthalpy: -9.490916834, fit: {'enthalpy': 9.490916834}, dominators: 8
+GdO3Sc enthalpy: -9.486263726, fit: {'enthalpy': 9.486263726}, dominators: 9
+GdO3Sc enthalpy: -9.47912859, fit: {'enthalpy': 9.47912859}, dominators: 10
+GdO3Sc enthalpy: -9.460983916, fit: {'enthalpy': 9.460983916}, dominators: 11
+GdO3Sc enthalpy: -9.447373473999999, fit: {'enthalpy': 9.447373473999999}, dominators: 12
+GdO3Sc enthalpy: -9.445846384, fit: {'enthalpy': 9.445846384}, dominators: 13
+GdO3Sc enthalpy: -9.443758945999999, fit: {'enthalpy': 9.443758945999999}, dominators: 14
+GdO3Sc enthalpy: -9.430417250000001, fit: {'enthalpy': 9.430417250000001}, dominators: 15
+GdO3Sc enthalpy: -9.414296842, fit: {'enthalpy': 9.414296842}, dominators: 16
+GdO3Sc enthalpy: -9.414115614, fit: {'enthalpy': 9.414115614}, dominators: 17
+GdO3Sc enthalpy: -9.404843688, fit: {'enthalpy': 9.404843688}, dominators: 18
+GdO3Sc enthalpy: -9.385902974, fit: {'enthalpy': 9.385902974}, dominators: 19
+save good.traj
+save good8.traj
+set keep population..
+construct keepPop
+construct Population keep with 3 individual
+keep ind:
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}, dominators: 0
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 5
+GdO3Sc enthalpy: -9.447373473999999, fit: {'enthalpy': 9.447373473999999}, dominators: 12
+save keep8.traj
+best ind:
+calculating dominators...
+calculating fitness...
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}
+save best.traj
+============= Generation 9 =============
+FixPopulation
+-------------------
+Ind Type           : Bulk
+Ind Numbers        : 8
+Population Size    : 20
+Distance Dict      : {('Gd', 'Gd'): 2.352, ('Gd', 'Sc'): 2.196, ('Sc', 'Gd'): 2.196, ('Gd', 'O'): 1.572, ('O', 'Gd'): 1.572, ('Sc', 'Sc'): 2.04, ('Sc', 'O'): 1.416, ('O', 'Sc'): 1.416, ('O', 'O'): 0.792}
+-------------------
+change volRatio from 1.0346844943786282 to 0.9991224084865014
+construct Population temp with 8 individual
+calculating dominators...
+calculating fitness...
+GAGenerator
+-------------------
+Mutations:
+ SlipMutation        : 16.67%
+ LatticeMutation     : 16.67%
+ RippleMutation      : 16.67%
+ RattleMutation      : 16.67%
+ PermMutation        : 16.67%
+Crossovers:
+ CutAndSplicePairing : 16.67%
+Random Ratio         : 30.00%
+Number of cluster    : 3
+Add symmertry        : True
+-------------------
+
+construct Population init with 0 individual
+success SlipMutation in init8-2
+success CutAndSplicePairing between init6-1 and init8-2
+success PermMutation in init8-10
+success RippleMutation in init6-1
+success LatticeMutation in init8-8
+success RattleMutation in init8-6
+success SlipMutation in init6-1
+success LatticeMutation in init8-2
+success PermMutation in init8-3
+success PermMutation in init2-10
+success PermMutation in init6-1
+success RippleMutation in init8-10
+success CutAndSplicePairing between init8-17 and init8-0
+success LatticeMutation in init6-1
+OP infomation: 
++---------------------+--------------+---------------+------------+
+|       Operator      | Probability  | SelectedTimes | SuccessNum |
++---------------------+--------------+---------------+------------+
+| CutAndSplicePairing |    16.67%    |       2       |     2      |
+|     SlipMutation    |    16.67%    |       2       |     2      |
+|   LatticeMutation   |    16.67%    |       3       |     3      |
+|    RippleMutation   |    16.67%    |       2       |     2      |
+|    RattleMutation   |    16.67%    |       1       |     1      |
+|     PermMutation    |    16.67%    |       4       |     4      |
++---------------------+--------------+---------------+------------+
+check population init, popsize:14
+check survival: 14
+Reading Seeds ...
+construct Population seed with 0 individual
+check population init, popsize:20
+check survival: 20
+Generate new initial population with 20 individuals:
+  CutAndSplicePairing: 2
+  SlipMutation: 2
+  LatticeMutation: 3
+  RippleMutation: 2
+  PermMutation: 4
+  random: 6
+  RattleMutation: 1
+save init9.traj
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+construct Population temp with 10 individual
+save raw9.traj
+check population temp, popsize:10
+check survival: 10
+find spg...
+delete duplicate structures...
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:10
+del_duplicate survival: 9
+save gen9.traj
+set good population..
+construct goodPop
+construct Population temp with 9 individual
+construct Population temp with 29 individual
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:32
+del_duplicate survival: 25
+calculating dominators...
+calculating fitness...
+calculating dominators...
+calculating fitness...
+good ind:
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}, dominators: 0
+GdO3Sc enthalpy: -9.58642859, fit: {'enthalpy': 9.58642859}, dominators: 1
+GdO3Sc enthalpy: -9.570952232, fit: {'enthalpy': 9.570952232}, dominators: 2
+GdO3Sc enthalpy: -9.568351942, fit: {'enthalpy': 9.568351942}, dominators: 3
+GdO3Sc enthalpy: -9.549157750000001, fit: {'enthalpy': 9.549157750000001}, dominators: 4
+GdO3Sc enthalpy: -9.540460586, fit: {'enthalpy': 9.540460586}, dominators: 5
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 6
+GdO3Sc enthalpy: -9.518363048000001, fit: {'enthalpy': 9.518363048000001}, dominators: 7
+GdO3Sc enthalpy: -9.514164344, fit: {'enthalpy': 9.514164344}, dominators: 8
+GdO3Sc enthalpy: -9.498873692, fit: {'enthalpy': 9.498873692}, dominators: 9
+GdO3Sc enthalpy: -9.498274866, fit: {'enthalpy': 9.498274866}, dominators: 10
+GdO3Sc enthalpy: -9.490916834, fit: {'enthalpy': 9.490916834}, dominators: 11
+GdO3Sc enthalpy: -9.486263726, fit: {'enthalpy': 9.486263726}, dominators: 12
+GdO3Sc enthalpy: -9.47912859, fit: {'enthalpy': 9.47912859}, dominators: 13
+GdO3Sc enthalpy: -9.460983916, fit: {'enthalpy': 9.460983916}, dominators: 14
+GdO3Sc enthalpy: -9.447373473999999, fit: {'enthalpy': 9.447373473999999}, dominators: 15
+GdO3Sc enthalpy: -9.445846384, fit: {'enthalpy': 9.445846384}, dominators: 16
+GdO3Sc enthalpy: -9.443758945999999, fit: {'enthalpy': 9.443758945999999}, dominators: 17
+GdO3Sc enthalpy: -9.442035308, fit: {'enthalpy': 9.442035308}, dominators: 18
+GdO3Sc enthalpy: -9.430417250000001, fit: {'enthalpy': 9.430417250000001}, dominators: 19
+save good.traj
+save good9.traj
+set keep population..
+construct keepPop
+construct Population keep with 3 individual
+keep ind:
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}, dominators: 0
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 6
+GdO3Sc enthalpy: -9.498873692, fit: {'enthalpy': 9.498873692}, dominators: 9
+save keep9.traj
+best ind:
+calculating dominators...
+calculating fitness...
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}
+save best.traj
+============ Generation 10 =============
+FixPopulation
+-------------------
+Ind Type           : Bulk
+Ind Numbers        : 9
+Population Size    : 20
+Distance Dict      : {('Gd', 'Gd'): 2.352, ('Gd', 'Sc'): 2.196, ('Sc', 'Gd'): 2.196, ('Gd', 'O'): 1.572, ('O', 'Gd'): 1.572, ('Sc', 'Sc'): 2.04, ('Sc', 'O'): 1.416, ('O', 'Sc'): 1.416, ('O', 'O'): 0.792}
+-------------------
+change volRatio from 0.9991224084865014 to 1.0000161673024905
+construct Population temp with 9 individual
+calculating dominators...
+calculating fitness...
+GAGenerator
+-------------------
+Mutations:
+ SlipMutation        : 16.67%
+ LatticeMutation     : 16.67%
+ RippleMutation      : 16.67%
+ RattleMutation      : 16.67%
+ PermMutation        : 16.67%
+Crossovers:
+ CutAndSplicePairing : 16.67%
+Random Ratio         : 30.00%
+Number of cluster    : 3
+Add symmertry        : True
+-------------------
+
+construct Population init with 0 individual
+success RippleMutation in init6-1
+success RippleMutation in init2-10
+success PermMutation in init9-2
+success RattleMutation in init6-1
+success RippleMutation in init9-3
+success PermMutation in init9-1
+success CutAndSplicePairing between init9-12 and init9-12
+success CutAndSplicePairing between init9-4 and init9-8
+success SlipMutation in init6-1
+success CutAndSplicePairing between init6-1 and init9-7
+success PermMutation in init9-2
+success RippleMutation in init9-2
+success CutAndSplicePairing between init9-12 and init9-12
+success CutAndSplicePairing between init9-12 and init9-12
+OP infomation: 
++---------------------+--------------+---------------+------------+
+|       Operator      | Probability  | SelectedTimes | SuccessNum |
++---------------------+--------------+---------------+------------+
+| CutAndSplicePairing |    16.67%    |       5       |     5      |
+|     SlipMutation    |    16.67%    |       1       |     1      |
+|   LatticeMutation   |    16.67%    |       0       |     0      |
+|    RippleMutation   |    16.67%    |       4       |     4      |
+|    RattleMutation   |    16.67%    |       1       |     1      |
+|     PermMutation    |    16.67%    |       3       |     3      |
++---------------------+--------------+---------------+------------+
+check population init, popsize:14
+check survival: 14
+Reading Seeds ...
+construct Population seed with 0 individual
+check population init, popsize:20
+check survival: 20
+Generate new initial population with 20 individuals:
+  CutAndSplicePairing: 5
+  SlipMutation: 1
+  RippleMutation: 4
+  PermMutation: 3
+  random: 6
+  RattleMutation: 1
+save init10.traj
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+Error 'list index out of range' happened on line 108
+VASP fail
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+VASP finish
+construct Population temp with 12 individual
+save raw10.traj
+check population temp, popsize:12
+check survival: 12
+find spg...
+delete duplicate structures...
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:12
+del_duplicate survival: 8
+save gen10.traj
+set good population..
+construct goodPop
+construct Population temp with 8 individual
+construct Population temp with 28 individual
+calculating dominators...
+calculating fitness...
+del_duplicate temp begin, popsize:31
+del_duplicate survival: 24
+calculating dominators...
+calculating fitness...
+calculating dominators...
+calculating fitness...
+good ind:
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}, dominators: 0
+GdO3Sc enthalpy: -9.592451788, fit: {'enthalpy': 9.592451788}, dominators: 1
+GdO3Sc enthalpy: -9.58642859, fit: {'enthalpy': 9.58642859}, dominators: 2
+GdO3Sc enthalpy: -9.56981102, fit: {'enthalpy': 9.56981102}, dominators: 3
+GdO3Sc enthalpy: -9.549157750000001, fit: {'enthalpy': 9.549157750000001}, dominators: 4
+GdO3Sc enthalpy: -9.540460586, fit: {'enthalpy': 9.540460586}, dominators: 5
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 6
+GdO3Sc enthalpy: -9.518363048000001, fit: {'enthalpy': 9.518363048000001}, dominators: 7
+GdO3Sc enthalpy: -9.514164344, fit: {'enthalpy': 9.514164344}, dominators: 8
+GdO3Sc enthalpy: -9.498873692, fit: {'enthalpy': 9.498873692}, dominators: 9
+GdO3Sc enthalpy: -9.498274866, fit: {'enthalpy': 9.498274866}, dominators: 10
+GdO3Sc enthalpy: -9.490916834, fit: {'enthalpy': 9.490916834}, dominators: 11
+GdO3Sc enthalpy: -9.486263726, fit: {'enthalpy': 9.486263726}, dominators: 12
+GdO3Sc enthalpy: -9.47912859, fit: {'enthalpy': 9.47912859}, dominators: 13
+GdO3Sc enthalpy: -9.460983916, fit: {'enthalpy': 9.460983916}, dominators: 14
+GdO3Sc enthalpy: -9.44961408, fit: {'enthalpy': 9.44961408}, dominators: 15
+GdO3Sc enthalpy: -9.447373473999999, fit: {'enthalpy': 9.447373473999999}, dominators: 16
+GdO3Sc enthalpy: -9.445846384, fit: {'enthalpy': 9.445846384}, dominators: 17
+GdO3Sc enthalpy: -9.442035308, fit: {'enthalpy': 9.442035308}, dominators: 18
+GdO3Sc enthalpy: -9.430417250000001, fit: {'enthalpy': 9.430417250000001}, dominators: 19
+save good.traj
+save good10.traj
+set keep population..
+construct keepPop
+construct Population keep with 3 individual
+keep ind:
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}, dominators: 0
+GdO3Sc enthalpy: -9.52649694, fit: {'enthalpy': 9.52649694}, dominators: 6
+GdO3Sc enthalpy: -9.498873692, fit: {'enthalpy': 9.498873692}, dominators: 9
+save keep10.traj
+best ind:
+calculating dominators...
+calculating fitness...
+GdO3Sc enthalpy: -9.610038032, fit: {'enthalpy': 9.610038032}
+save best.traj
